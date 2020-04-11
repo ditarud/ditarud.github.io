@@ -8,177 +8,32 @@
 <!--[if IE 9]><html class="ie9 ie-lte9 no-js" lang="es-es"> <![endif]-->
 <!--[if (gt IE 9)|!(IE)]><!--> <html class="no-js" lang="es-es"> <!--<![endif]-->
 <head>
-	<title>SAF - Facultad de Ingeniería y Ciencias Aplicadas</title>
-	<!--[if !HTML5]>
-		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-	<![endif]-->
-	<!-- www.phpied.com/conditional-comments-block-downloads/ -->
-	<!-- Always force latest IE rendering engine
-	   (even in intranet) & Chrome Frame
-	   Remove this if you use the .htaccess -->
+    <!-- Add icon library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link type="text/css" rel="stylesheet" href="style.css" />
 
-	<meta charset="utf-8" />
-
-	<!-- http://dev.w3.org/html5/markup/meta.name.html -->
-	<meta name="application-name" content="ing" />
-
-	<!-- Speaking of Google, don't forget to set your site up:
-	   http://google.com/webmasters -->
-	<meta name="google-site-verification" content="" />
-
-	<!--  Mobile Viewport Fix
-		j.mp/mobileviewport & davidbcalhoun.com/2010/viewport-metatag
-		device-width: Occupy full width of the screen in its current orientation
-		initial-scale = 1.0 retains dimensions instead of zooming out if page height > device height
-		user-scalable = yes allows the user to zoom in -->
-	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-	<link rel="shortcut icon" href="/ing/static/img/favicon.ico" type="image/x-icon">
-	<link rel="apple-touch-icon" href="/ing/static/img/favicon.png">
-
-	<!-- Define the root URL. -->
-	<link id="static-js-root-url" href="/ing/static/js"/>
-	<link id="static-css-root-url" href="/ing/static/css"/>
-
-	<!-- Styles. -->
-	<link href="/ing/static/css/web2py.css" rel="stylesheet">
-	<link href="/ing/static/css/bootstrap.min.css" rel="stylesheet">
-	<link href="/ing/static/css/bootstrap-responsive.min.css" rel="stylesheet">
-	<link href="/ing/static/css/jquery.fileupload-ui.css" rel="stylesheet">
-	<link href="/ing/static/css/saf.css" rel="stylesheet">
-	<link href="/ing/static/css/mobile-navbar.css" rel="stylesheet">
-
-	<!-- All JavaScript at the bottom, except for Modernizr which enables
-	   HTML5 elements & feature detects -->
-	<script src="/ing/static/js/libs/modernizr.custom.js"></script>
-
-	
-
-    <!-- Scripts. -->
-    <script src="/ing/static/js/libs/jquery-1.7.2.min.js"></script>
-    <script src="/ing/static/js/libs/bootstrap.min.js"></script>
-    <script src="/ing/static/js/libs/jquery.bootstrap-validate.js"></script>
-	<script src="/ing/static/js/libs/date-es-CL.js"></script>
-
-    <!--[if lt IE 7 ]>
-        <script src="/ing/static/js/libs/dd_belatedpng.js"></script>
-        <script> DD_belatedPNG.fix('img, .png_bg'); //fix any <img> or .png_bg background-images </script>
-    <![endif]-->
-
-    <!-- SAF-specific general scripts. -->
-    <script src="/ing/static/js/saf.js"></script>
-    <script src="/ing/static/js/datetime-check.js"></script>
-    <script src="/ing/static/js/setup-footer.js"></script>
-    <script src="/ing/static/js/libs/web2py_bootstrap.js"></script>
-    <script src="/ing/static/js/libs/web2py.js"></script>
-
-	<script>
-    	SAF.api_url = '/ing/default/api'.slice(0,-'api'.length);
-  	</script>
-
-	
-</head>
-<body>
+    <title>My Page</title>  
     
-
-    <!-- Navbar. -->
-       
-   
-   
-   
-   
-   
-   
-   
-
-   
-<div class="navbar navbar-fixed-top ">
-    <div class="navbar-inner">
-        <div class="container">
-            <!-- the next tag is necessary for bootstrap menus, do not remove -->
-            <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </a>
-            
-                <div>
-                    <!--<a class="brand" href="/ing/default/index"><img style="height: 20px;" src="/ing/static/img/logo_iuandes.png"></a>-->
-                </div>
-            
-
-             
-                
-                    <ul class="nav pull-right">
-                        <li><a href="/ing/default/user/login">Ingresar</a></li>
-                    </ul>
-                
-             
-        </div>
-    </div>
-</div>
-
-
-
-    <!-- Main content. -->
-    <div id="main-content" class="container">
-        
-            
-<h2>Inicio de sesión</h2>
-<div id="web2py_user_form">
-    <form action="#" enctype="multipart/form-data" method="post"><table><tr id="auth_user_email__row"><td class="w2p_fl"><label for="auth_user_email" id="auth_user_email__label">Correo electrónico: </label></td><td class="w2p_fw"><input class="string" id="auth_user_email" name="email" type="text" value="" /></td><td class="w2p_fc"></td></tr><tr id="auth_user_password__row"><td class="w2p_fl"><label for="auth_user_password" id="auth_user_password__label">Contraseña: </label></td><td class="w2p_fw"><input class="password" id="auth_user_password" name="password" type="password" value="" /></td><td class="w2p_fc"></td></tr><tr id="auth_user_remember_me__row"><td class="w2p_fl"><label for="auth_user_remember_me" id="auth_user_remember_me__label">No cerrar sesión: </label></td><td class="w2p_fw"><input class="boolean" id="auth_user_remember_me" name="remember_me" type="checkbox" value="on" /></td><td class="w2p_fc"></td></tr><tr id="submit_record__row"><td class="w2p_fl"></td><td class="w2p_fw"><input type="submit" value="Log In" /></td><td class="w2p_fc"></td></tr></table><div style="display:none;"><input name="_next" type="hidden" value="/ing/default/index" /><input name="_formkey" type="hidden" value="87587945-421b-4ec0-861f-d606ddc39acd" /><input name="_formname" type="hidden" value="login" /></div></form>
-
     
-        <br/>
-        <a href="/ing/default/google_login">Login con Google (@miuandes.cl)</a>
+</head> 
 
-        
-          <br/>
-          <a href="/ing/default/user/request_reset_password">Restablecer contraseña</a>
-        
-    
-</div>
+<body style="background-color: #FAEBD7;" >
 
-        
-        <p></p>
-    </div>
-
-    <!-- Footer. -->
-    
-    <div id="footer">
-    <div class="container">
-        <span>
-            <img style="height: 70px;" src="/ing/static/img/Logo_ICC-01.png">
-            &copy;2017 Universidad de los Andes, Facultad de Ingeniería y Ciencias Aplicadas.
-            
-        </span>
-    </div>
-</div>
-    
-
-    <!-- Template to be used for alerts. -->
-    <div class="row hide" data-type="template-alert">
-        <div class="alert" style="text-align: center; left: 50%; position: fixed">
-            <button class="close" data-dismiss="alert" type="button">&times;</button>
-            <span data-type="alert-text"></span>
+    <div class="content ">     
+        <div style="text-align: center;"> 
+            <h1>Diego Ignacio Tarud Garrido  </h1>
+            <h2>Egresado Ingeniería Civil en Ciencia de la Computación</h2>    
+            <h3>Universidad de los Andes</h3>      
+            <a href="#" class="fa fa-facebook" target="_blank"></a>
+            <a href="https://twitter.com/TarudG" class="fa fa-twitter" target="_blank"></a>
+            <a href="https://www.linkedin.com/in/diego-tarud-garrido-55b79a130/" class="fa fa-linkedin" target="_blank"></a>
+            <a href="https://github.com/ditarud" class="fa fa-github"  target="_blank"></a>
         </div>
     </div>
 
-	<!-- View-specific scripts. -->
-    
     
 
-    <!-- Google Analytics tracking -->
-    
-        <script>
-          (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-          (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-          })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-          ga('create', 'UA-70769902-1', 'auto');
-          ga('send', 'pageview');
-        </script>
+	   
     
 </body>
 </html>
